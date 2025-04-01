@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Data</title>
+    <link rel="stylesheet" href="sing.css">
+    
+    <link rel="apple-touch-icon" sizes="205x154" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+    <link rel="shortcut icon" type="image/png" href="favicon.png">
+</head>
+<body>
+    <figure>
+        <figcaption>Designing Data-Intensive Applications - Key Concepts</figcaption>
+    <audio loop controls>
+        <source src="data.wav" type="audio/mpeg">
+    </audio>
+    </figure>
+	
+	
+<figure>
+        <figcaption>Briefing Document:  
+		
+		</figcaption>
+</figure>
+
+
+    <h1>Key Concepts from "Designing Data-Intensive Applications"</h1>
+    <p>This briefing document summarizes the main themes and important ideas presented in the provided excerpts from "Designing Data-Intensive Applications." The book delves into the fundamental principles and practical considerations for building reliable, scalable, and maintainable data systems.</p>
+
+    <h2>Part I: Foundations of Data Systems</h2>
+
+    <h3>Chapter 1: Reliable, Scalable, and Maintainable Applications</h3>
+    <p>This chapter lays the groundwork by defining the key goals of data system design: reliability, scalability, and maintainability.</p>
+    <ul>
+        <li><strong>Reliability:</strong> Ensuring the system continues to function correctly even in the face of faults. The author emphasizes that "a fault is not the same as a failure. A fault is usually defined as one component of the system deviating from its spec, whereas a failure is when the system as a whole stops providing the required service to the user."</li>
+        <li><strong>Scalability:</strong> The ability of the system to cope with increased load by considering performance degradation and resource addition.</li>
+        <li><strong>Maintainability:</strong> Designing systems to be easy to operate, understand, and evolve over time by various engineers.</li>
+    </ul>
+
+    <h3>Chapter 2: Data Models and Query Languages</h3>
+    <p>This chapter explores different ways of organizing and querying data, emphasizing the impact of the chosen data model on how we think about and interact with our data.</p>
+    <ul>
+        <li><strong>Relational Model Versus Document Model:</strong> Discusses NoSQL databases as an alternative to relational models, driven by flexibility and scalability needs.</li>
+        <li><strong>Schema Evolution:</strong> Contrasts document databases' flexibility with relational databases' structured approaches.</li>
+        <li><strong>Query Languages:</strong> Compares declarative query languages like SQL with imperative approaches.</li>
+        <li><strong>Graph-Like Data Models:</strong> Introduces property graphs and RDF for representing interconnected data.</li>
+    </ul>
+
+    <h3>Chapter 3: Storage and Retrieval</h3>
+    <p>This chapter delves into underlying data structures that power databases and influence their performance characteristics.</p>
+    <ul>
+        <li><strong>Hash Indexes:</strong> Efficient for exact key lookups but unsuitable for range queries.</li>
+        <li><strong>SSTables and LSM-Trees:</strong> Log-Structured Merge Trees excel at write throughput by batching writes.</li>
+        <li><strong>B-Trees:</strong> Efficient for both reads and writes, suitable for range queries.</li>
+        <li><strong>OLTP vs. OLAP:</strong> Distinguishes between transaction processing systems and analytical systems.</li>
+    </ul>
+
+    <h3>Chapter 4: Encoding and Evolution</h3>
+    <p>This chapter focuses on how data is encoded for storage and transmission, and how schemas can evolve over time.</p>
+    <ul>
+        <li><strong>Encoding Formats:</strong> Covers JSON, XML, Thrift, Protocol Buffers, Avro, etc.</li>
+        <li><strong>Schemas:</strong> Highlights their importance in providing structure and supporting schema evolution.</li>
+    </ul>
+
+    <h2>Part II: Distributed Data</h2>
+
+    <h3>Chapter 5: Replication</h3>
+    <p>This chapter explores replication techniques to synchronize multiple copies of data across nodes.</p>
+    <ul>
+        <li><strong>Synchronous vs. Asynchronous Replication:</strong> Discusses trade-offs between consistency and availability/performance.</li>
+        <li><strong>Replication Benefits:</strong> Improves latency, availability, and read throughput.</li>
+    </ul>
+
+    <h3>Chapter 6: Partitioning</h3>
+    <p>This chapter discusses partitioning (sharding) techniques for distributing large datasets across multiple machines.</p>
+    <ul>
+        <li><strong>Partitioning Strategies:</strong> Key ranges vs. hash partitioning.</li>
+        <li><strong>Secondary Indexes:</strong> Local vs. global indexes in partitioned environments.</li>
+    </ul>
+
+    <h3>Chapter 7: Transactions</h3>
+    <p>This chapter delves into transactions providing ACID guarantees for database operations.</p>
+    <ul>
+        <li><strong>The Meaning of ACID:</strong> Atomicity, Consistency, Isolation, Durability explained in detail.</li>
+        <li><strong>NoSQL Trade-Offs:</strong> BASE (Basically Available, Soft state, Eventual consistency) as an alternative to ACID guarantees in some cases.</li>
+    </ul>
+
+    <h3>Chapter 8: The Trouble with Distributed Systems</h3>
+    <p>This chapter highlights challenges like faults, unreliable networks, timeouts, clock synchronization issues, etc., in distributed systems.</p>
+
+    <h3>Chapter 9: Consistency and Consensus</h3>
+    <p>This chapter explores consistency guarantees like linearizability and consensus algorithms like Paxos and Raft in distributed systems.</p>
+
+</body>
+</html>
